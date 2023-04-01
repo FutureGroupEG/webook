@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="keywords" content="ahlawy,ahlawya,ahlaweya,اهلاوي,اهلاوية" />
+        <meta name="description" content="Ahlawya" />
+        <title>WE Book - Ahlawaya</title>
+        <link rel="icon" href="Icon.png" />
+        <link rel="apple-touch-icon" href="Icon.png" />
+        <link rel="stylesheet" href="Style.css" />
+        <script src="JavaScript.js"></script>
+    </head>
+    <body>
+        <div id="loginDiv" style="display: none;" class="protected">
+            <div class="protected__alert" id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" id="login" type="password" placeholder="password" onkeypress="PressEnterToLogin()" />
+                <button onclick="Login()" id="button" type="button" class="protected__content__btn">Continue</button>
+            </div>
+        </div>
+        <div id="mainDiv" style="display: block;">
+            <a id="logout" class="logout" href="#" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #5b2c92;"></i></a>
+            <br />
+            <br />
+            <h3 style="color: #5b2c92;">Ahlawaya</h3>
+            <div class="padding;center">
+                <img src="Files/Ahlawaya-1.jpg" />
+                <img src="Files/Ahlawaya-2.jpg" />
+                <img src="Files/Ahlawaya-3.jpg" />
+                <img src="Files/Ahlawaya-4.jpg" />
+            </div>
+            <script>
+                if (localStorage.getItem("login") != passwordHash) {
+                    loginDiv.style.display = "block";
+                    mainDiv.style.display = "none";
+                    document.getElementById("login").focus();
+                }
+            </script>
+            <footer>
+                <br />
+                <a id="back" class="back" href="javascript:history.back()" title="Back"><i class="fa fa-arrow-left" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <a id="home" class="home" onclick="location.href='index.html'" title="Home"><i class="fa fa-home" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <br />
+                <br />
+            </footer>
+        </div>
+    </body>
+</html>

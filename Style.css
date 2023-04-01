@@ -1,0 +1,242 @@
+:root {
+    --bg: #fff;
+    --color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #000;
+        --color: #000;
+    }
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+    line-height: 1.2;
+    -webkit-text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
+    display: flex;
+    min-height: 100%;
+}
+body {
+    background-color: var(--bg);
+    text-align: center;
+    font-family: verdana;
+    font-size: 14px;
+    margin: auto;
+    color: #555;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    min-width: 360px;
+    max-width: 960px;
+}
+iframe {
+    max-width: 853px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 480px;
+}
+button {
+    color: var(--color);
+    background-color:#5b2c92;
+    border: 1px solid#5b2c92;
+    width: 100px;
+    height: 32px;
+	border-radius: 4px;
+}
+button:hover {
+    background-color: #7a5099;
+    border-color: #7a5099;
+    cursor: pointer;
+}
+.padding {
+    padding: 10px 10px 10px 10px;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.home {
+    border-radius: 50%;
+    border-color:#5b2c92;
+    background-color: transparent;
+    color:#5b2c92;
+    width: 100px;
+}
+.home:hover {
+    background-color: transparent;
+    border-color: #7a5099;
+    cursor: pointer;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+footer {
+    width: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logout {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    transition: top 0.3s;
+}
+.notifications {
+    position: fixed;
+    left: 50px;
+    top: 15px;
+    transition: top 0.3s;
+}
+.about {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    transition: top 0.3s;
+}
+.back {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    transition: top 0.3s;
+    width: unset;
+    height: unset;
+}
+.home {
+    position: fixed;
+    left: 50px;
+    top: 15px;
+    transition: top 0.3s;
+    width: unset;
+    height: unset;
+}
+#search {
+    text-align: initial;
+    display: inline-block;
+    padding-bottom: 1em;
+}
+input[type="submit"] {
+    background-color:#5b2c92;
+    color: var(--color);
+    border-color:#5b2c92;
+    border-radius: 12px;
+    border-style: solid;
+}
+input[type="text"] {
+    background-color: var(--bg);
+    color: var(--input-color);
+    border-color:#5b2c92;
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-style: solid;
+    width: 200px;
+}
+input[type="text"]:focus {
+    outline: none;
+    border-color: #555;
+}
+.protected {
+    background: #f2f2f2;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    width: 360px;
+    margin-inline: auto;
+    text-align: initial;
+}
+.protected__alert {
+    display: none;
+    border-bottom: 1px solid transparent;
+    border-radius: 3px 3px 0 0;
+    padding: 12px 14px;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.protected__content {
+    padding: 24px 28px;
+}
+.protected__content__heading {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 12px;
+    line-height: 1;
+}
+.protected__content__input {
+    display: block;
+    border: solid 1px #ccc;
+    padding: 12px 14px;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+.protected__content__input:focus {
+    outline: none;
+    border-color:#5b2c92;
+}
+.protected__content__btn {
+    background-color:#5b2c92;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    padding: 12px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+}
+.protected__content__btn:hover {
+    background-color: #7a5099;
+}
+@font-face {
+    font-family: "FontAwesome";
+    src: url("Fonts/fontawesome-webfont.woff?v=4.7.0");
+    src: url("Fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("Fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("Fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-sign-out:before {
+    content: "\f08b";
+}
+.fa-bell-o:before {
+    content: "\f0a2";
+}
+.fa-info-circle:before {
+    content: "\f05a";
+}
+.fa-arrow-left:before {
+    content: "\f060";
+}
+.fa-home:before {
+    content: "\f015";
+}

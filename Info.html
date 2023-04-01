@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="keywords" content="info" />
+        <meta name="description" content="Info" />
+        <title>WE Book - Info</title>
+        <link rel="icon" href="Icon.png" />
+        <link rel="apple-touch-icon" href="Icon.png" />
+        <link rel="stylesheet" href="Style.css" />
+        <script src="JavaScript.js"></script>
+        <style>
+            button {
+                width: 153px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loginDiv" style="display: none;" class="protected">
+            <div class="protected__alert" id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" id="login" type="password" placeholder="password" onkeypress="PressEnterToLogin()" />
+                <button onclick="Login()" id="button" type="button" class="protected__content__btn">Continue</button>
+            </div>
+        </div>
+        <div id="mainDiv" style="display: block;">
+            <a id="logout" class="logout" href="#" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #5b2c92;"></i></a>
+            <br />
+            <br />
+            <h3 style="color: #5b2c92;">Informations</h3>
+            <div class="padding">
+                <button onclick="Prepaid()">Prepaid</button>
+                <button onclick="Postpaid()">Postpaid</button><br />
+                <br />
+                <button onclick="ADSL()">ADSL</button>
+                <button onclick="FixedLine()">Fixed Line</button><br />
+                <br />
+                <button onclick="USSD()">USSD</button>
+                <button onclick="Devices()">Devices</button><br />
+                <br />
+                <button onclick="TNPS()">TNPS</button>
+                <button onclick="ImportanatLinks()">Importanat Links</button><br />
+                <br />
+                <button onclick="AllForms()" style="width: 310px;">All Forms</button>
+            </div>
+            <script>
+                if (localStorage.getItem("login") != passwordHash) {
+                    loginDiv.style.display = "block";
+                    mainDiv.style.display = "none";
+                    document.getElementById("login").focus();
+                }
+                function Prepaid() {
+                    window.open("Prepaid.html", "_self");
+                }
+                function Postpaid() {
+                    window.open("Postpaid.html", "_self");
+                }
+                function ADSL() {
+                    window.open("ADSL.html", "_self");
+                }
+                function FixedLine() {
+                    window.open("FixedLine.html", "_self");
+                }
+                function USSD() {
+                    window.open("USSD.html", "_self");
+                }
+                function Devices() {
+                    window.open("Devices.html", "_self");
+                }
+                function TNPS() {
+                    window.open("TNPS.html", "_self");
+                }
+                function ImportanatLinks() {
+                    window.open("ImportanatLinks.html", "_self");
+                }
+                function AllForms() {
+                    window.open("AllForms.html", "_self");
+                }
+            </script>
+            <footer>
+                <br />
+                <a id="back" class="back" href="javascript:history.back()" title="Back"><i class="fa fa-arrow-left" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <br />
+                <br />
+            </footer>
+        </div>
+    </body>
+</html>
