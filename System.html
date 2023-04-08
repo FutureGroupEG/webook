@@ -31,28 +31,17 @@
             <br />
             <h3 style="color: #5b2c92;">System</h3>
             <div class="padding">
-                <button onclick="CreatePrepaid()">Create Prepaid</button>
-                <button onclick="CreateFMC()">Create FMC</button><br />
-                <br />
                 <button onclick="FMCCancelation()">FMC Cancelation</button>
                 <button onclick="CreateWeMix()">Create We Mix</button><br />
                 <br />
                 <button onclick="CreateADSL()">Create ADSL</button>
                 <button onclick="AssignCPE()">Assign CPE</button><br />
-                <br />
-                <button onclick="AccessGuide()" style="width: 324px;">Bss Access Guide</button>
             </div>
             <script>
                 if (localStorage.getItem("login") != passwordHash) {
                     loginDiv.style.display = "block";
                     mainDiv.style.display = "none";
                     document.getElementById("login").focus();
-                }
-                function CreatePrepaid() {
-                    window.open("CreatePrepaid.html", "_self");
-                }
-                function CreateFMC() {
-                    window.open("CreateFMC.html", "_self");
                 }
                 function FMCCancelation() {
                     window.open("FMCCancelation.html", "_self");
@@ -65,9 +54,6 @@
                 }
                 function AssignCPE() {
                     window.open("AssignCPE.html", "_self");
-                }
-                function AccessGuide() {
-                    window.open("AccessGuide.html", "_self");
                 }
             </script>
             <footer>
