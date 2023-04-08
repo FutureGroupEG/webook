@@ -1,4 +1,4 @@
-var passwordHash = "835303514";
+var passwordHash = "1231819095";
 {
     init1: function Login() {
         var passwordInput = document.getElementById("login").value;
