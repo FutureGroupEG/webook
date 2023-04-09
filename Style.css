@@ -64,6 +64,10 @@ img {
     margin-right: auto;
     width: 100%;
 }
+p {
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+}
 .home {
     border-radius: 50%;
     border-color: #5b2c92;
