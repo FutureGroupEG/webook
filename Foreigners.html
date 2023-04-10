@@ -3,18 +3,13 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <meta name="keywords" content="we,rules" />
-        <meta name="description" content="WE Rules" />
-        <title>WE Book - WE Rules</title>
+        <meta name="keywords" content="ntra,process,نترا" />
+        <meta name="description" content="NTRA" />
+        <title>WE Book - Foreigners</title>
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
         <link rel="stylesheet" href="Style.css" />
         <script src="JavaScript.js"></script>
-        <style>
-            button {
-                width: 160px;
-            }
-        </style>
     </head>
     <body>
         <div id="loginDiv" style="display: none;" class="protected">
@@ -29,14 +24,9 @@
             <a id="logout" class="logout" href="#" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #5b2c92;"></i></a>
             <br />
             <br />
-            <h3 style="color: #5b2c92;">WE Rules</h3>
+            <h3 style="color: #5b2c92;">Foreigners</h3>
             <div class="padding">
-                <button onclick="RetailStandards()">Retail Standards</button>
-                <button onclick="DressCode()">Dress Code</button><br />
-                <br />
-                <button onclick="Foreigners()" style="width: 324px;">Foreigners</button><br />
-                <br />
-                <button onclick="NTRA()" style="width: 324px;">NTRA</button>
+                <img src="Files/Foreigners-1.jpg" />
             </div>
             <script>
                 if (localStorage.getItem("login") != passwordHash) {
@@ -44,22 +34,11 @@
                     mainDiv.style.display = "none";
                     document.getElementById("login").focus();
                 }
-                function RetailStandards() {
-                    window.open("RetailStandards.html", "_self");
-                }
-                function DressCode() {
-                    window.open("DressCode.html", "_self");
-                }
-                function Foreigners() {
-                    window.open("Foreigners.html", "_self");
-                }
-                function NTRA() {
-                    window.open("NTRA.html", "_self");
-                }
             </script>
             <footer>
                 <br />
                 <a id="back" class="back" href="javascript:history.back()" title="Back"><i class="fa fa-arrow-left" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <a id="home" class="home" onclick="location.href='index.html'" title="Home"><i class="fa fa-home" style="font-size: 28px; color: #5b2c92;"></i></a>
                 <br />
                 <br />
             </footer>
