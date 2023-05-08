@@ -19,6 +19,18 @@ html {
     display: flex;
     min-height: 100%;
 }
+h1 {
+    margin: 34px 0px 0px 0px;
+	color: #5b2c92;
+}
+h3 {
+    margin: 12px 0px 24px 0px;;
+	color: #5b2c92;
+}
+h5 {
+    margin: 0px 0px 18px 118px;
+	color: #5d5c5c;
+}
 body {
     background-color: var(--bg);
     text-align: center;
@@ -182,6 +194,7 @@ input[type="text"]:focus {
     font-weight: 500;
     margin: 0 0 12px;
     line-height: 1;
+	color: #5d5c5c;
 }
 .protected__content__input {
     display: block;
