@@ -3,13 +3,18 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <meta name="keywords" content="postpaid,indigo,open,cl,home,plus,atp,انديجو,نظام,فاتورة" />
-        <meta name="description" content="Postpaid - Indigo" />
+        <meta name="keywords" content="we,rules" />
+        <meta name="description" content="WE Rules" />
         <title>WE Book - Postpaid</title>
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
         <link rel="stylesheet" href="Style.css" />
         <script src="JavaScript.js"></script>
+        <style>
+            button {
+                width: 160px;
+            }
+        </style>
     </head>
     <body>
         <div id="loginDiv" style="display: none;" class="protected">
@@ -25,30 +30,22 @@
             <br />
             <br />
             <h3 style="color: #5b2c92;">Postpaid</h3>
-            <div class="padding;center">
-                <img src="Files/Indigo-1.jpg" />
-                <img src="Files/Indigo-2.jpg" />
-                <img src="Files/Indigo-3.jpg" />
-                <img src="Files/Indigo-4.jpg" />
-                <img src="Files/Indigo-5.jpg" />
-                <img src="Files/Indigo-6.jpg" />
-                <img src="Files/Indigo-7.jpg" />
-                <img src="Files/Indigo-8.jpg" />
-                <img src="Files/Indigo-9.jpg" />
-                <img src="Files/Indigo-10.jpg" />
-                <img src="Files/Indigo-11.jpg" />
-                <img src="Files/Indigo-12.jpg" />
-                <img src="Files/Indigo-13.jpg" />
-                <img src="Files/Indigo-14.jpg" />
-                <img src="Files/Indigo-15.jpg" />
-                <img src="Files/Indigo-16.jpg" />
-                <img src="Files/Indigo-17.jpg" />
+            <div class="padding">
+                <button onclick="WeGold()" style="width: 324px;">We Gold</button><br />
+                <br />
+                <button onclick="Indigo()" style="width: 324px;">Indigo</button>
             </div>
             <script>
                 if (localStorage.getItem("login") != passwordHash) {
                     loginDiv.style.display = "block";
                     mainDiv.style.display = "none";
                     document.getElementById("login").focus();
+                }
+                function WeGold() {
+                    window.open("WeGold.html", "_self");
+                }
+                function Indigo() {
+                    window.open("Indigo.html", "_self");
                 }
             </script>
             <footer>
