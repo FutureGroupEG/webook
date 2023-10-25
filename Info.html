@@ -43,7 +43,8 @@
                 <button onclick="TNPS()">TNPS</button>
                 <button onclick="ImportanatLinks()">Importanat Links</button><br />
                 <br />
-                <button onclick="AllForms()" style="width: 310px;">All Forms</button>
+                <button onclick="WePay()">We Pay</button>
+                <button onclick="AllForms()">All Forms</button>
             </div>
             <script>
                 if (localStorage.getItem("login") != passwordHash) {
@@ -74,6 +75,9 @@
                 }
                 function ImportanatLinks() {
                     window.open("ImportanatLinks.html", "_self");
+                }
+                function WePay() {
+                    window.open("WePay.html", "_self");
                 }
                 function AllForms() {
                     window.open("AllForms.html", "_self");

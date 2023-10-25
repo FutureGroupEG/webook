@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="keywords" content="we,pay,باي" />
+        <meta name="description" content="USSD" />
+        <title>WE Book - We Pay</title>
+        <link rel="icon" href="Icon.png" />
+        <link rel="apple-touch-icon" href="Icon.png" />
+        <link rel="stylesheet" href="Style.css" />
+        <script src="JavaScript.js"></script>
+    </head>
+    <body>
+        <div id="loginDiv" style="display: none;" class="protected">
+            <div class="protected__alert" id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" id="login" type="password" placeholder="password" onkeypress="PressEnterToLogin()" />
+                <button onclick="Login()" id="button" type="button" class="protected__content__btn">Continue</button>
+            </div>
+        </div>
+        <div id="mainDiv" style="display: block;">
+            <a id="logout" class="logout" href="#" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #5b2c92;"></i></a>
+            <br />
+            <br />
+            <h3 style="color: #5b2c92;">We Pay</h3>
+            <div class="padding">
+                <img src="Files/We Pay (1).jpg" />
+                <img src="Files/We Pay (2).jpg" />
+                <img src="Files/We Pay (3).jpg" />
+                <img src="Files/We Pay (4).jpg" />
+                <img src="Files/We Pay (5).jpg" />
+                <img src="Files/We Pay (6).jpg" />
+                <img src="Files/We Pay (7).jpg" />
+                <img src="Files/We Pay (8).jpg" />
+                <img src="Files/We Pay (9).jpg" />
+                <img src="Files/We Pay (10).jpg" />
+                <img src="Files/We Pay (11).jpg" />
+                <img src="Files/We Pay (12).jpg" />
+                <img src="Files/We Pay (13).jpg" />
+                <img src="Files/We Pay (14).jpg" />
+                <img src="Files/We Pay (15).jpg" />
+                <img src="Files/We Pay (16).jpg" />
+                <img src="Files/We Pay (17).jpg" />
+                <img src="Files/We Pay (18).jpg" />
+                <img src="Files/We Pay (19).jpg" />
+                <img src="Files/We Pay (20).jpg" />
+                <img src="Files/We Pay (21).jpg" />
+                <img src="Files/We Pay (22).jpg" />
+                <img src="Files/We Pay (23).jpg" />
+                <img src="Files/We Pay (24).jpg" />
+                <img src="Files/We Pay (25).jpg" />
+                <img src="Files/We Pay (26).jpg" />
+                <img src="Files/We Pay (27).jpg" />
+                <img src="Files/We Pay (28).jpg" />
+                <img src="Files/We Pay (29).jpg" />
+                <img src="Files/We Pay (30).jpg" />
+                <img src="Files/We Pay (31).jpg" />
+                <img src="Files/We Pay (32).jpg" />
+                <img src="Files/We Pay (33).jpg" />
+                <img src="Files/We Pay (34).jpg" />
+                <img src="Files/We Pay (35).jpg" />
+                <img src="Files/We Pay (36).jpg" />
+                <img src="Files/We Pay (37).jpg" />
+                <img src="Files/We Pay (38).jpg" />
+                <img src="Files/We Pay (39).jpg" />
+                <img src="Files/We Pay (40).jpg" />
+                <img src="Files/We Pay (41).jpg" />
+                <img src="Files/We Pay (42).jpg" />
+                <img src="Files/We Pay (43).jpg" />
+                <img src="Files/We Pay (44).jpg" />
+                <img src="Files/We Pay (45).jpg" />
+                <img src="Files/We Pay (46).jpg" />
+                <img src="Files/We Pay (47).jpg" />
+                <img src="Files/We Pay (48).jpg" />
+                <img src="Files/We Pay (49).jpg" />
+                <img src="Files/We Pay (50).jpg" />
+                <img src="Files/We Pay (51).jpg" />
+                <img src="Files/We Pay (52).jpg" />
+                <img src="Files/We Pay (53).jpg" />
+                <img src="Files/We Pay (54).jpg" />
+                <img src="Files/We Pay (55).jpg" />
+                <img src="Files/We Pay (56).jpg" />
+                <img src="Files/We Pay (57).jpg" />
+                <img src="Files/We Pay (58).jpg" />
+                <img src="Files/We Pay (59).jpg" />
+                <img src="Files/We Pay (60).jpg" />
+                <img src="Files/We Pay (61).jpg" />
+                <img src="Files/We Pay (62).jpg" />
+                <img src="Files/We Pay (63).jpg" />
+                <img src="Files/We Pay (64).jpg" />
+                <img src="Files/We Pay (65).jpg" />
+            </div>
+            <script>
+                if (localStorage.getItem("login") != passwordHash) {
+                    loginDiv.style.display = "block";
+                    mainDiv.style.display = "none";
+                    document.getElementById("login").focus();
+                }
+            </script>
+            <footer>
+                <br />
+                <a id="back" class="back" href="javascript:history.back()" title="Back"><i class="fa fa-arrow-left" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <a id="home" class="home" onclick="location.href='index.html'" title="Home"><i class="fa fa-home" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <br />
+                <br />
+            </footer>
+        </div>
+    </body>
+</html>
