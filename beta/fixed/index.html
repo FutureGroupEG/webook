@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title>Fixed Requests</title>
+        <link rel="icon" href="icon.png" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="stylesheet" href="style-mini.css" />
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left; min-width: 300px;">
+                <div>
+                    <h3>Fixed Requests</h3>
+                    <br />
+                    <label style="font-size: 10px;">Choose Your Governorate</label>
+                    <br />
+                    <br />
+                    <div>
+                        <button style="width: 300px;" id="agent" onclick="goTo('sohag.html')">Sohag</button>
+                        <br />
+                        <br />
+                        <button style="width: 300px;" id="store" onclick="goTo('assiut.html')">Assiut</button>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <footer>
+                <p>Developed by: Mamdouh Khalaf .. "MUE Team"</p>
+            </footer>
+        </div>
+        <script>
+            function goTo(Link) {
+                window.open(Link, "_self");
+            }
+        </script>
+    </body>
+</html>
