@@ -69,7 +69,8 @@ textarea {
     resize: none;
     height: 50px;
 	position: relative;
-	top: 4px;
+	top: 6px;
+    bottom: 6px;	
 }
 #another {
     margin-right: 6px;
