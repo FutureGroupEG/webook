@@ -153,12 +153,12 @@
                     <td colspan="3"><input type="text" name="Central" id="Central" /></td>
                 </tr>
                 <tr>
-                    <td><label>Address</label></td>
-                    <td colspan="3"><textarea name="Address" id="Address"></textarea></td>
-                </tr>
-                <tr>
                     <td><label>Serial</label></td>
                     <td colspan="3"><input type="number" name="Serial" id="Serial" /></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td colspan="3"><textarea name="Address" id="Address"></textarea></td>
                 </tr>
                 <tr>
                     <td><label>Status</label></td>
@@ -254,11 +254,11 @@
                 } else if (document.getElementById("Central").value == "") {
                     document.getElementById("Central").focus();
                     return false;
-                } else if (document.getElementById("Address").value == "") {
-                    document.getElementById("Address").focus();
-                    return false;
                 } else if (document.getElementById("Serial").value == "") {
                     document.getElementById("Serial").focus();
+                    return false;
+                } else if (document.getElementById("Address").value == "") {
+                    document.getElementById("Address").focus();
                     return false;
                 } else if (document.getElementById("status").value == "") {
                     document.getElementById("status").focus();
