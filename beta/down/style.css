@@ -43,15 +43,15 @@ table {
 td {
     height: 28px;
 }
-select {
+input[type="time"] {
     width: 240px;
+}
+select {
+    width: -webkit-fill-available !important;
+    width: -moz-available !important;
 }
 select:focus {
     outline-style: auto;
-}
-input[type="time"] {
-    width: -webkit-fill-available !important;
-    width: -moz-available !important;
 }
 .footer {
     text-align: center;
