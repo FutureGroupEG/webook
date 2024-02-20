@@ -68,6 +68,8 @@ textarea {
     width: -moz-available !important;
     resize: none;
     height: 50px;
+	position: relative;
+	top: 2px;
 }
 #another {
     margin-right: 6px;
