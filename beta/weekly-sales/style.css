@@ -25,20 +25,33 @@ h2 {
     text-align: center;
     padding: 0px 0px 10px 0px;
 }
-h3 {
-    text-align: center;
-}
-.mainDiv {
-    margin: auto;
+label {
+    position: relative;
+    right: 5%;
 }
 td {
     height: 28px;
 }
-label {
-    margin: 0px 0px 0px 16px;
-    float: left;
-    font-family: monospace;
-    font-size: 14px;
+button {
+    float: right;
+}
+select {
+    width: -webkit-fill-available !important;
+    width: -moz-available !important;
+}
+select:focus {
+    outline-style: auto;
+}
+.Agent-Name {
+    width: -webkit-fill-available !important;
+    width: -moz-available !important;
+}
+.space {
+    height: 4px;
+}
+input[type="text"],
+[type="number"] {
+    width: 84px;
 }
 input[type="number"] {
     -moz-appearance: textfield;
@@ -50,10 +63,14 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input[type="number"] {
-    width: 84px;
+#another {
+    margin-right: 6px;
 }
-footer {
+.header {
+    height: 36px;
+}
+.footer {
     text-align: center;
     font-size: 9px;
+    padding-top: 8px;
 }

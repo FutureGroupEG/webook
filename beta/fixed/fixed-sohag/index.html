@@ -121,10 +121,6 @@
                     <td colspan="3"><input type="text" name="Customer Name" id="CSTName" /></td>
                 </tr>
                 <tr>
-                    <td><label>Address</label></td>
-                    <td colspan="3"><input type="text" name="Address" id="Address" /></td>
-                </tr>
-                <tr>
                     <td><label>Customer ID</label></td>
                     <td colspan="3"><input type="number" name="Customer ID" id="CSTId" /></td>
                 </tr>
@@ -135,6 +131,10 @@
                 <tr>
                     <td><label>Central</label></td>
                     <td colspan="3"><input type="text" name="Central" id="Central" /></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td colspan="3"><textarea name="Address" id="Address"></textarea></td>
                 </tr>
                 <tr>
                     <td><label>Serial</label></td>
@@ -224,9 +224,6 @@
                 } else if (document.getElementById("CSTName").value == "") {
                     document.getElementById("CSTName").focus();
                     return false;
-                } else if (document.getElementById("Address").value == "") {
-                    document.getElementById("Address").focus();
-                    return false;
                 } else if (document.getElementById("CSTId").value == "") {
                     document.getElementById("CSTId").focus();
                     return false;
@@ -235,6 +232,9 @@
                     return false;
                 } else if (document.getElementById("Central").value == "") {
                     document.getElementById("Central").focus();
+                    return false;
+                } else if (document.getElementById("Address").value == "") {
+                    document.getElementById("Address").focus();
                     return false;
                 } else if (document.getElementById("Serial").value == "") {
                     document.getElementById("Serial").focus();
@@ -283,7 +283,6 @@
                 document.getElementById("status").value = "";
             }
         </script>
-        <br />
         <footer>
             <p class="footer">Developed by: Mamdouh Khalaf .. "MUE Team"</p>
         </footer>

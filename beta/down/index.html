@@ -43,16 +43,24 @@
                 </tr>
                 <tr>
                     <td><label>Reason: </label></td>
-                    <td><input type="text" id="Reason" /></td>
+                    <td>
+                        <select id="Reason">
+                            <option value="0" selected disabled hidden>Reason</option>
+                            <option value="Electricity Down">Electricity Down</option>
+                            <option value="Network Issue">Network Issue</option>
+                            <option value="BSS Limit">BSS Limit</option>
+                            <option value="Maintenance">Maintenance</option>
+                            <option value="Agent Issue">Agent Issue</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <td><label>From: </label></td>
-                    <td><input type="text" id="From" /></td>
+                    <td><input type="time" id="From" /></td>
                 </tr>
             </table>
             <br />
             <button type="button" onclick="Generate()">Generate</button>
-            <br />
             <br />
         </form>
         <script>
@@ -60,7 +68,7 @@
                 if (document.getElementById("store").value == "0") {
                     document.getElementById("store").focus();
                     return false;
-                } else if (document.getElementById("Reason").value == "") {
+                } else if (document.getElementById("Reason").value == "0") {
                     document.getElementById("Reason").focus();
                     return false;
                 } else if (document.getElementById("From").value == "") {
@@ -178,6 +186,8 @@
                     var District = "Sohag";
                     var Reason = document.getElementById("Reason").value;
                     var From = document.getElementById("From").value;
+                    const timeString = From;
+                    const timeString12hr = new Date("1970-01-01T" + timeString + "Z").toLocaleTimeString("en-EG", { timeZone: "UTC", hour12: true, hour: "numeric", minute: "numeric" });
                     var subject = "Store down " + "due to " + Reason + " || " + Name;
                     window.open(
                         "mailto:MiddleUpperEgyptTeamindirect@te.eg;Franchising.sales@te.eg;franchise.support@te.eg;DP-Updates@te.eg;kmpupdates-sales@te.eg;knowledge.management@te.eg;Homesales-PP@te.eg?cc=ahmed.g.abdelwahed@te.eg;eslam.a.gomaa@te.eg&subject=" +
@@ -185,8 +195,8 @@
                             "&body=Dears,%0d%0a%0d%0aKindly be informed that the below store is down due to " +
                             Reason +
                             " since " +
-                            From +
-                            ", and we will keep you updated once store up again." +
+                            timeString12hr +
+                            ", and we will keep you updated." +
                             "%0d%0a%0d%0a" +
                             "Code: " +
                             Code +
@@ -211,7 +221,6 @@
                 }
             }
         </script>
-        <br />
         <footer>
             <p class="footer">Developed by: Mamdouh Khalaf .. "MUE Team"</p>
         </footer>

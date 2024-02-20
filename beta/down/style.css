@@ -40,14 +40,16 @@ table {
     width: -webkit-fill-available;
     width: -moz-available;
 }
+td {
+    height: 28px;
+}
 select {
-    width: -webkit-fill-available !important;
-    width: -moz-available !important;
+    width: 240px;
 }
 select:focus {
     outline-style: auto;
 }
-input[type="text"] {
+input[type="time"] {
     width: -webkit-fill-available !important;
     width: -moz-available !important;
 }
