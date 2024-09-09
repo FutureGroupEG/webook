@@ -33,15 +33,25 @@
             <div class="padding">
                 <button onclick="BSSPortal()">BSS Portal</button><br />
                 <br />
+                <button onclick="WePay()">We Pay</button><br />
+                <br />
+                <button onclick="CSA()">CSA</button><br />
+                <br />
                 <button onclick="Fixed()">OSS</button><br />
                 <br />
                 <button onclick="DataLineActivation()">Data Line Activation</button><br />
                 <br />
-                <button onclick="Outlook()">Outlook</button><br />
-                <br />
                 <button onclick="Tkafol()">Tkafol</button><br />
                 <br />
-                <button onclick="Tamween()">Tamween</button>
+                <button onclick="Tamween()">Tamween</button><br />
+                <br />
+                <button onclick="Outlook()">Outlook</button><br />
+                <br />
+                <button onclick="SRG()">Sales Report Generator</button><br />
+                <br />
+                <button onclick="WeCal()">WE Calculator</button><br />
+                <br />
+                <button onclick="Cash()">Cash Helper</button>
             </div>
             <script>
                 if (localStorage.getItem("login") != passwordHash) {
@@ -50,7 +60,13 @@
                     document.getElementById("login").focus();
                 }
                 function BSSPortal() {
-                    window.open("https://extranet.te.eg:12900/oc/bes/sm/login/login-egypt.html", "_blank");
+                    window.open("https://extranet.te.eg:12900/oc", "_blank");
+                }
+                function WePay() {
+                    window.open("https://mobilewallet-fr.te.eg:4433/#!/login", "_blank");
+                }
+                function CSA() {
+                    window.open("https://extcsa.te.eg/franchisee/external/", "_blank");
                 }
                 function Fixed() {
                     window.open("https://franchise.te.eg/", "_blank");
@@ -58,14 +74,23 @@
                 function DataLineActivation() {
                     window.open("https://my.te.eg/user/line-activation", "_blank");
                 }
-                function Outlook() {
-                    window.open("http://outlook.office.com/mail/", "_blank");
-                }
                 function Tkafol() {
                     window.open("https://tk.te.eg/", "_blank");
                 }
                 function Tamween() {
                     window.open("https://www.tamwin.com.eg/", "_blank");
+                }
+                function Outlook() {
+                    window.open("http://outlook.office.com/mail/", "_blank");
+                }
+                function SRG() {
+                    window.open("https://weegypt.github.io/srg/", "_blank");
+                }
+                function WeCal() {
+                    window.open("https://weegypt.github.io/wecal/", "_blank");
+                }
+                function Cash() {
+                    window.open("https://weegypt.github.io/cash/", "_blank");
                 }
             </script>
             <footer>
