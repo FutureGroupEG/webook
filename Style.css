@@ -117,11 +117,17 @@ footer {
 }
 .notifications {
     position: fixed;
-    left: 50px;
+    left: 85px;
     top: 15px;
     transition: top 0.3s;
 }
 .about {
+    position: fixed;
+    left: 50px;
+    top: 15px;
+    transition: top 0.3s;
+}
+.download {
     position: fixed;
     left: 15px;
     top: 15px;
@@ -251,6 +257,9 @@ input[type="text"]:focus {
 }
 .fa-info-circle:before {
     content: "\f05a";
+}
+.fa-android:before {
+    content: "\f17b";
 }
 .fa-arrow-left:before {
     content: "\f060";
