@@ -30,8 +30,10 @@ window.onload = function () {
     }
     if (isWebView) {
         android.style.display = "none";
+		alert("app");
     } else {
         android.style.display = "Block";
+		alert("browser");
     }
 };
 function PressEnterToLogin() {
