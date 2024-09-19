@@ -18,8 +18,20 @@ var passwordHash = "1231819095";
     }
 }
 window.onload = function () {
-    if (window.location.href.indexOf("android") > -1) {
+    var isWebView = false;
+    var userAgent = navigator.userAgent;
+    if (/Android/.test(userAgent)) {
+        var androidVersion = parseFloat(userAgent.slice(userAgent.indexOf("Android") + 8));
+        if (androidVersion >= 10) {
+            isWebView = / (wv)/.test(userAgent);
+        } else {
+            isWebView = userAgent.includes("Version/");
+        }
+    }
+    if (isWebView) {
         android.style.display = "none";
+    } else {
+        android.style.display = "Block";
     }
 };
 function PressEnterToLogin() {
