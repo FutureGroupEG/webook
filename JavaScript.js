@@ -17,6 +17,11 @@ var passwordHash = "1231819095";
         }
     }
 }
+window.onload = function () {
+    if (window.location.href.indexOf("android") > -1) {
+        android.style.display = "none";
+    }
+};
 function PressEnterToLogin() {
     if (event.which == 13 || event.keyCode == 13) {
         Login();

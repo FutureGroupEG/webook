@@ -115,19 +115,19 @@ footer {
     top: 15px;
     transition: top 0.3s;
 }
-.notifications {
+.android {
     position: fixed;
     left: 85px;
     top: 15px;
     transition: top 0.3s;
 }
-.about {
+.notifications {
     position: fixed;
     left: 50px;
     top: 15px;
     transition: top 0.3s;
 }
-.download {
+.about {
     position: fixed;
     left: 15px;
     top: 15px;
