@@ -17,7 +17,7 @@
         </style>
     </head>
     <body>
-        <div id="loginDiv" style="display: none;" class="protected">
+        <div id="loginDiv" style="display: block;" class="protected">
             <div class="protected__alert" id="alert">You entered the wrong password</div>
             <div class="protected__content">
                 <h1 class="protected__content__heading">You need a password to continue</h1>
@@ -25,7 +25,7 @@
                 <button onclick="Login()" id="button" type="button" class="protected__content__btn">Continue</button>
             </div>
         </div>
-        <div id="mainDiv" style="display: block;">
+        <div id="mainDiv" style="display: none;">
             <a id="logout" class="logout" href="#" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #5b2c92;"></i></a>
             <br />
             <br />

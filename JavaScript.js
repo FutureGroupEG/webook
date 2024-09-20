@@ -1,13 +1,12 @@
+passHash = "1231819095";
 {
     if (window.navigator.userAgent.match(/wv/i) && document.getElementById("android")) {
         document.getElementById("android").style.display = "none";
     }
-    if (localStorage.getItem("login") == "1231819095") {
-        loginDiv.style.display = "none";
+    if (localStorage.getItem("login") == passHash) {
         mainDiv.style.display = "block";
+        loginDiv.style.display = "none";
     } else {
-        loginDiv.style.display = "block";
-        mainDiv.style.display = "none";
         document.getElementById("login").focus();
     }
 }
@@ -18,14 +17,12 @@ function Login() {
         password = Math.abs(~~((password << 5) - password + passwordInput.charCodeAt(i)));
     }
     localStorage.setItem("login", password);
-    if (localStorage.getItem("login") == "1231819095") {
-        loginDiv.style.display = "none";
+    if (localStorage.getItem("login") == passHash) {
         mainDiv.style.display = "block";
+        loginDiv.style.display = "none";
     } else {
-        loginDiv.style.display = "block";
-        mainDiv.style.display = "none";
-        document.getElementById("alert").style.display = "block";
         document.getElementById("login").focus();
+        document.getElementById("alert").style.display = "block";
     }
 }
 function PressEnterToLogin() {
