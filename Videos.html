@@ -9,7 +9,7 @@
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
         <link rel="stylesheet" href="Style.css" />
-        <script src="JavaScript.js"></script>
+        <script async src="JavaScript.js"></script>
     </head>
     <body>
         <div id="loginDiv" style="display: none;" class="protected">
@@ -28,11 +28,6 @@
             <iframe src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <script>
-                if (localStorage.getItem("login") != passwordHash) {
-                    loginDiv.style.display = "block";
-                    mainDiv.style.display = "none";
-                    document.getElementById("login").focus();
-                }
             </script>
             <footer>
                 <br />

@@ -9,7 +9,7 @@
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
         <link rel="stylesheet" href="Style.css" />
-        <script src="JavaScript.js"></script>
+        <script async src="JavaScript.js"></script>
         <style>
             button {
                 width: 153px;
@@ -47,11 +47,6 @@
                 <button onclick="AllForms()">All Forms</button>
             </div>
             <script>
-                if (localStorage.getItem("login") != passwordHash) {
-                    loginDiv.style.display = "block";
-                    mainDiv.style.display = "none";
-                    document.getElementById("login").focus();
-                }
                 function Prepaid() {
                     window.open("Prepaid.html", "_self");
                 }

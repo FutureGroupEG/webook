@@ -9,7 +9,7 @@
         <link rel="icon" href="icon.png" />
         <link rel="apple-touch-icon" href="icon.png" />
         <link rel="stylesheet" href="Style.css" />
-        <script src="JavaScript.js"></script>
+        <script async src="JavaScript.js"></script>
         <style>
             button {
                 width: 160px;
@@ -38,11 +38,6 @@
                 <button onclick="VideoBundle()">Video Bundle</button>
             </div>
             <script>
-                if (localStorage.getItem("login") != passwordHash) {
-                    loginDiv.style.display = "block";
-                    mainDiv.style.display = "none";
-                    document.getElementById("login").focus();
-                }
                 function Nitro() {
                     window.open("Nitro.html", "_self");
                 }

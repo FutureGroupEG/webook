@@ -9,7 +9,7 @@
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
         <link rel="stylesheet" href="Style.css" />
-        <script src="JavaScript.js"></script>
+        <script async src="JavaScript.js"></script>
         <style>
             body {
                 max-width: 640px;
@@ -66,11 +66,6 @@
             </div>
             <br />
             <script>
-                if (localStorage.getItem("login") != passwordHash) {
-                    loginDiv.style.display = "block";
-                    mainDiv.style.display = "none";
-                    document.getElementById("login").focus();
-                }
                 function Info() {
                     window.open("Info.html", "_self");
                 }
@@ -92,17 +87,6 @@
                 function MissionAndVision() {
                     window.open("MissionAndVision.html", "_self");
                 }
-                window.onscroll = function () {
-                    if (window.pageYOffset < 10) {
-                        document.getElementById("logout").style.top = "15px";
-                        document.getElementById("notifications").style.top = "15px";
-                        document.getElementById("about").style.top = "15px";
-                    } else {
-                        document.getElementById("logout").style.top = "-50px";
-                        document.getElementById("notifications").style.top = "-50px";
-                        document.getElementById("about").style.top = "-50px";
-                    }
-                };
             </script>
             <footer>
                 <div class="row">

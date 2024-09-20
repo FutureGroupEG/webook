@@ -9,7 +9,7 @@
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
         <link rel="stylesheet" href="Style.css" />
-        <script src="JavaScript.js"></script>
+        <script async src="JavaScript.js"></script>
         <style>
             button {
                 width: 160px;
@@ -38,11 +38,6 @@
                 <button onclick="AssignCPE()">Create Fixed</button><br />
             </div>
             <script>
-                if (localStorage.getItem("login") != passwordHash) {
-                    loginDiv.style.display = "block";
-                    mainDiv.style.display = "none";
-                    document.getElementById("login").focus();
-                }
                 function FMCCancelation() {
                     window.open("FMCCancelation.html", "_self");
                 }
