@@ -66,6 +66,11 @@
             </div>
             <br />
             <script>
+				{
+					if (window.navigator.userAgent.match("x64") && document.getElementById("android")) {
+						android.style.display = "none";
+				}
+				}
                 function Info() {
                     window.open("Info.html", "_self");
                 }
