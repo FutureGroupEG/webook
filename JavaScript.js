@@ -9,9 +9,8 @@
     }
 }
 function AppOrBrowser() {
-    if (window.navigator.userAgent.match(/Android/i) && document.getElementById("android")) {
-		alert(window.navigator.userAgent);
-        android.style.display = "none";
+    if (window.navigator.userAgent.match(/wv/i) && document.getElementById("android")) {
+        document.getElementById("android").style.display = "none";
     }
 }
 function Login() {
