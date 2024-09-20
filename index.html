@@ -66,6 +66,12 @@
             </div>
             <br />
             <script>
+				{
+				if (window.navigator.userAgent.match(/Android/i) && document.getElementById("android")) {
+					alert(window.navigator.userAgent);
+					android.style.display = "none";
+				}
+				}
                 function Info() {
                     window.open("Info.html", "_self");
                 }
