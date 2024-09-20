@@ -9,7 +9,9 @@
     }
 }
 function AppOrBrowser() {
-    alert(window.navigator.userAgent);
+    if (window.navigator.userAgent.match("wv") && document.getElementById("android")) {
+        android.style.display = "none";
+    }
 }
 function Login() {
     var passwordInput = document.getElementById("login").value;
