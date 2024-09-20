@@ -1,4 +1,7 @@
 {
+    if (window.navigator.userAgent.match(/wv/i) && document.getElementById("android")) {
+        document.getElementById("android").style.display = "none";
+    }
     if (localStorage.getItem("login") == "1231819095") {
         loginDiv.style.display = "none";
         mainDiv.style.display = "block";
@@ -6,11 +9,6 @@
         loginDiv.style.display = "block";
         mainDiv.style.display = "none";
         document.getElementById("login").focus();
-    }
-}
-function AppOrBrowser() {
-    if (window.navigator.userAgent.match(/wv/i) && document.getElementById("android")) {
-        document.getElementById("android").style.display = "none";
     }
 }
 function Login() {
