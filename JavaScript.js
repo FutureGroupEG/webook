@@ -1,24 +1,4 @@
 {
-    var isWebView = false;
-    var userAgent = navigator.userAgent;
-    if (/Android/.test(userAgent)) {
-        var androidVersion = parseFloat(userAgent.slice(userAgent.indexOf("Android") + 8));
-        if (androidVersion >= 10) {
-            isWebView = / (wv)/.test(userAgent);
-        } else {
-            isWebView = userAgent.includes("Version/");
-        }
-    }
-    if (isWebView) {
-        localStorage.setItem("AndroidAPP", "true");
-    } else {
-        localStorage.setItem("AndroidAPP", "false");
-    }
-    if (localStorage.getItem("AndroidAPP") == "true" && document.getElementById("android")) {
-        android.style.display = "none";
-    }
-}
-{
     if (localStorage.getItem("login") == "1231819095") {
         loginDiv.style.display = "none";
         mainDiv.style.display = "block";
