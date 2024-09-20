@@ -9,7 +9,10 @@
     }
 }
 function AppOrBrowser() {
+    if (window.navigator.userAgent.match(/Android/i) && document.getElementById("android")) {
 		alert(window.navigator.userAgent);
+        android.style.display = "none";
+    }
 }
 function Login() {
     var passwordInput = document.getElementById("login").value;
