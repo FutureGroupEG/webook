@@ -10,6 +10,7 @@
         }
     ],
     "start_url": "index.html",
+    "scope": "https://weegypt.github.io/webook/",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone"
 }
