@@ -1,7 +1,6 @@
 passHash = "1231819095";
 {
-const standalone = navigator.standalone || window.matchMedia("(display-mode: standalone)").matches;
-    if (window.navigator.userAgent.match(/android/i) && (!standalone) && document.getElementById("android")) {
+    if (window.navigator.userAgent.match(/android/i) && (!navigator.standalone) && document.getElementById("android")) {
         document.getElementById("android").style.display = "block";
     }
     if (localStorage.getItem("login") == passHash) {
