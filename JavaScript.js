@@ -1,7 +1,6 @@
-alert(window.navigator.userAgent);
 passHash = "1231819095";
 {
-    if (window.navigator.userAgent.match(/android/i) && !window.navigator.userAgent.match(/wv/i) && document.getElementById("android")) {
+    if (window.navigator.userAgent.match(/android/i) && !window.navigator.userAgent.match(/wv/i) && !window.matchMedia("(display-mode: standalone)").matches && document.getElementById("android")) {
         document.getElementById("android").style.display = "block";
     }
     if (localStorage.getItem("login") == passHash) {
@@ -33,7 +32,7 @@ function PressEnterToLogin() {
 }
 function Logout() {
     localStorage.setItem("login", "");
-	window.location.href = "index.html";
+    window.location.href = "index.html";
 }
 window.onscroll = function () {
     if (window.pageYOffset < 10) {
