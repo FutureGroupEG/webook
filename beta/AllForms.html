@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="keywords" content="all,forms,طلب,نموذج" />
+        <meta name="description" content="All Forms" />
+        <title>All Forms</title>
+        <link rel="icon" href="Icon.png" />
+        <link rel="apple-touch-icon" href="Icon.png" />
+        <link rel="stylesheet" href="Style.css" />
+        <link rel="manifest" href="manifest.json" />
+        <script src="JavaScript.js" defer></script>
+        <style>
+            button {
+                width: 310px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loginDiv" style="display: block;" class="protected">
+            <div class="protected__alert" id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" id="login" type="password" placeholder="password" onkeypress="PressEnterToLogin()" />
+                <button onclick="Login()" id="button" type="button" class="protected__content__btn">Continue</button>
+            </div>
+        </div>
+        <div id="mainDiv" style="display: none;">
+            <a id="logout" class="logout" href="#" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #5b2c92;"></i></a>
+            <br />
+            <br />
+            <h3 style="color: #5b2c92;">All Forms</h3>
+            <div class="padding">
+                <button onclick="Forms1()">استمارة حجز الخط الارضي</button><br />
+                <br />
+                <button onclick="Forms2()">استمارة عدم حيازة خط محمول</button><br />
+                <br />
+                <button onclick="Forms3()">استمارة نقل ملكية خط محمول</button><br />
+                <br />
+                <button onclick="Forms4()">اقرار - 12 شهر</button><br />
+                <br />
+                <button onclick="Forms5()">اقرار إستلام جهاز</button><br />
+                <br />
+                <button onclick="Forms6()">اقرار الرقم المميز لخط انديجو</button><br />
+                <br />
+                <button onclick="Forms7()">ايصال استلام نقديه</button><br />
+                <br />
+                <button onclick="Forms8()">شهادة إلى من يهمه الامر</button><br />
+                <br />
+                <button onclick="Forms9()">طلب استبدال الشريحة</button><br />
+                <br />
+                <button onclick="Forms10()">طلب اعاده تشغيل او تركيب</button><br />
+                <br />
+                <button onclick="Forms11()">طلب الاستغناء عن خط ارضي</button><br />
+                <br />
+                <button onclick="Forms12()">طلب التقديم علي خط ارضي</button><br />
+                <br />
+                <button onclick="Forms13()">طلب التنازل عن خط ارضي</button><br />
+                <br />
+                <button onclick="Forms14()">طلب الخواص والخدمات</button><br />
+                <br />
+                <button onclick="Forms15()">طلب الغاء الانترنت الارضي</button><br />
+                <br />
+                <button onclick="Forms16()">طلب الغاء المحفظه</button><br />
+                <br />
+                <button onclick="Forms17()">طلب الغاء خط انديجو</button><br />
+                <br />
+                <button onclick="Forms18()">طلب الغاء خط كارت</button><br />
+                <br />
+                <button onclick="Forms19()">طلب الغاء نقل خط المحمول من مشغل خدمة اخر</button><br />
+                <br />
+                <button onclick="Forms20()">طلب ايقاف مؤقت لخط فاتوره</button><br />
+                <br />
+                <button onclick="Forms21()">طلب تحويل خدمة الانترنت الارضي من شركة اورانج</button><br />
+                <br />
+                <button onclick="Forms22()">طلب تعديل رقم التواصل للانترنت الارضي</button><br />
+                <br />
+                <button onclick="Forms23()">طلب تقسيط الفواتير واعاده جدوله الاقساط</button><br />
+                <br />
+                <button onclick="Forms24()">طلب حضور العميل</button><br />
+                <br />
+                <button onclick="Forms25()">طلب نقل الخط الارضي</button><br />
+                <br />
+                <button onclick="Forms26()">طلب نقل خط المحمول من مشغل خدمة اخر</button><br />
+                <br />
+                <button onclick="Forms27()">طلبات دمج انديجو بلس</button><br />
+                <br />
+                <button onclick="Forms28()">عقد تقديم خدمة المكالمات التسويقية</button><br />
+                <br />
+                <button onclick="Forms29()">English Contract</button><br />
+                <br />
+                <button onclick="Forms30()">E-mail Accounts Application Form</button><br />
+            </div>
+            <script>
+                function Forms1() {
+                    window.open("Forms/استمارة حجز الخط الارضي.pdf", "_blank");
+                }
+                function Forms2() {
+                    window.open("Forms/استمارة عدم حيازة خط محمول.pdf", "_blank");
+                }
+                function Forms3() {
+                    window.open("Forms/استمارة نقل ملكية خط محمول.pdf", "_blank");
+                }
+                function Forms4() {
+                    window.open("Forms/اقرار - 12 شهر.pdf", "_blank");
+                }
+                function Forms5() {
+                    window.open("Forms/اقرار إستلام جهاز.pdf", "_blank");
+                }
+                function Forms6() {
+                    window.open("Forms/اقرار الرقم المميز لخط انديجو.pdf", "_blank");
+                }
+                function Forms7() {
+                    window.open("Forms/ايصال استلام نقديه.pdf", "_blank");
+                }
+                function Forms8() {
+                    window.open("Forms/شهادة إلى من يهمه الامر.pdf", "_blank");
+                }
+                function Forms9() {
+                    window.open("Forms/طلب استبدال الشريحة.pdf", "_blank");
+                }
+                function Forms10() {
+                    window.open("Forms/طلب اعاده تشغيل او تركيب.pdf", "_blank");
+                }
+                function Forms11() {
+                    window.open("Forms/طلب الاستغناء عن خط ارضي.pdf", "_blank");
+                }
+                function Forms12() {
+                    window.open("Forms/طلب التقديم علي خط ارضي.pdf", "_blank");
+                }
+                function Forms13() {
+                    window.open("Forms/طلب التنازل عن خط ارضي.pdf", "_blank");
+                }
+                function Forms14() {
+                    window.open("Forms/طلب الخواص والخدمات.pdf", "_blank");
+                }
+                function Forms15() {
+                    window.open("Forms/طلب الغاء الانترنت الارضي.pdf", "_blank");
+                }
+                function Forms16() {
+                    window.open("Forms/طلب الغاء المحفظه.pdf", "_blank");
+                }
+                function Forms17() {
+                    window.open("Forms/طلب الغاء خط انديجو.pdf", "_blank");
+                }
+                function Forms18() {
+                    window.open("Forms/طلب الغاء خط كارت.pdf", "_blank");
+                }
+                function Forms19() {
+                    window.open("Forms/طلب الغاء نقل خط المحمول من مشغل خدمة اخر.pdf", "_blank");
+                }
+                function Forms20() {
+                    window.open("Forms/طلب ايقاف مؤقت لخط فاتوره.pdf", "_blank");
+                }
+                function Forms21() {
+                    window.open("Forms/طلب تحويل خدمة الانترنت الارضي من شركة اورانج.pdf", "_blank");
+                }
+                function Forms22() {
+                    window.open("Forms/طلب تعديل رقم التواصل للانترنت الارضي.pdf", "_blank");
+                }
+                function Forms23() {
+                    window.open("Forms/طلب تقسيط الفواتير واعاده جدوله الاقساط.pdf", "_blank");
+                }
+                function Forms24() {
+                    window.open("Forms/طلب حضور العميل.pdf", "_blank");
+                }
+                function Forms25() {
+                    window.open("Forms/طلب نقل الخط الارضي.pdf", "_blank");
+                }
+                function Forms26() {
+                    window.open("Forms/طلب نقل خط المحمول من مشغل خدمة اخر.pdf", "_blank");
+                }
+                function Forms27() {
+                    window.open("Forms/طلبات دمج انديجو بلس.pdf", "_blank");
+                }
+                function Forms28() {
+                    window.open("Forms/عقد تقديم خدمة المكالمات التسويقية.pdf", "_blank");
+                }
+                function Forms29() {
+                    window.open("Forms/Service Subscription Contract English.pdf", "_blank");
+                }
+                function Forms30() {
+                    window.open("Forms/E-mail Accounts Application Form.pdf", "_blank");
+                }
+            </script>
+            <footer>
+                <br />
+                <a id="back" class="back" href="javascript:history.back()" title="Back"><i class="fa fa-arrow-left" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <a id="home" class="home" onclick="location.href='index.html'" title="Home"><i class="fa fa-home" style="font-size: 28px; color: #5b2c92;"></i></a>
+                <br />
+                <br />
+            </footer>
+        </div>
+    </body>
+</html>
