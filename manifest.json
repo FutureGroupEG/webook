@@ -1,7 +1,7 @@
 {
     "name": "WE Book",
     "short_name": "WE Book",
-    "start_url": "index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "orientation": "any",
     "lang": "en-US",
