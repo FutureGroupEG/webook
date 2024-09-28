@@ -21,15 +21,15 @@ html {
 }
 h1 {
     margin: 34px 0px 0px 0px;
-    color: #5b2c92;
+	color: #5b2c92;
 }
 h3 {
-    margin: 12px 0px 24px 0px;
-    color: #5b2c92;
+    margin: 12px 0px 24px 0px;;
+	color: #5b2c92;
 }
 h5 {
     margin: 0px 0px 18px 118px;
-    color: #5d5c5c;
+	color: #5d5c5c;
 }
 body {
     background-color: var(--bg);
@@ -96,7 +96,7 @@ p {
     float: left;
     width: 25%;
     padding: 5px 0px 8px 0px;
-    line-height: 14px;
+	line-height: 14px;
 }
 .row::after {
     content: "";
@@ -201,7 +201,7 @@ input[type="text"]:focus {
     font-weight: 500;
     margin: 0 0 12px;
     line-height: 1;
-    color: #5d5c5c;
+	color: #5d5c5c;
 }
 .protected__content__input {
     display: block;
@@ -236,8 +236,8 @@ input[type="text"]:focus {
 }
 @font-face {
     font-family: "FontAwesome";
-    src: url("Fonts/fontawesome-webfont.woff");
-    src: url("Fonts/fontawesome-webfont.woff2") format("woff2"), url("Fonts/fontawesome-webfont.woff") format("woff"), url("Fonts/fontawesome-webfont.ttf") format("truetype");
+    src: url("Fonts/fontawesome-webfont.woff?v=4.7.0");
+    src: url("Fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("Fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("Fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
